@@ -28,10 +28,6 @@ const Index = () => {
     },
   ]);
   // hooks for manual confidence selection by user
-  const [googleWeight, setGoogleWeight] = useState(0.4);
-  const [openWeight, setOpenWeight] = useState(0.3);
-  const [yandexWeight, setYandexWeight] = useState(0.3);
-
   const [state, setState] = React.useState({
     googleWeight: 0.4,
     openWeight: 0.3,

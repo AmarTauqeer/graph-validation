@@ -1,6 +1,6 @@
 import axios from "axios";
 import data from "../../../data/data";
-import { googleKey, yandexKey, openKey } from "./Credentials";
+import { googleKey, yandexKey } from "./Credentials";
 import GetDataFromHotel from "./GetDataFromHotel";
 // google place
 const fetchGooglePlace = async (place, inputFields) => {
@@ -8,7 +8,6 @@ const fetchGooglePlace = async (place, inputFields) => {
   var googlePlace = [];
   if (place) {
     const result = await axios.get(
-      //`https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${place}&inputtype=textquery&fields=name,business_status,formatted_address,place_id,geometry&key=AIzaSyCuS9Kgn7afsi5I8mFAGJk9lMc0_EaYpUw`
       `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=%${place}%&inputtype=textquery&region=at&fields=name,business_status,formatted_address,place_id,geometry&key=${googleCredentials}`
     );
 
@@ -532,14 +531,14 @@ const fetchHotelPlaceDetail = async (place, inputFields) => {
   let name = "Record not found.";
   let phone = "Record not found.";
   let address = "Record not found.";
-  let url = "Record not found.";
+  //let url = "Record not found.";
 
   await queryDispatcherHotel.query(sparqlQueryHotel).then((res) => {
     if (res.results.bindings.length === 1) {
       name = res.results.bindings[0].name.value;
       phone = res.results.bindings[0].phone.value;
       address = res.results.bindings[0].streetAddress.value;
-      url = res.results.bindings[0].url.value;
+      //url = res.results.bindings[0].url.value;
     }
   });
 
