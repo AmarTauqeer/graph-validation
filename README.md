@@ -4,7 +4,16 @@ KG validation about Google Places, Open Street Map and Yandex Places etc.
 
 ### Tools
 
-React, Bootstrap, REST APIs, Axios ...
+Node,React, Bootstrap, REST APIs, Axios,git
+
+### Installation
+-Download from repository
+-Open folder in VS Code
+-Open terminal
+-cd graph-validation
+-npm install
+-npm start
+
 
 ### live Demo
 

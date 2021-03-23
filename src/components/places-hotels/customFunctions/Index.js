@@ -10,7 +10,6 @@ const fetchGooglePlace = async (place, inputFields) => {
     const result = await axios.get(
       `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=%${place}%&inputtype=textquery&region=at&fields=name,business_status,formatted_address,place_id,geometry&key=${googleCredentials}`
     );
-
     if (result.data.status !== "ZERO_RESULTS") {
       const fetchData = result.data.candidates[0];
       const placeId = fetchData.place_id;
@@ -41,6 +40,7 @@ const fetchGooglePlaceDetail = async (
   const result = await axios(
     `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,formatted_phone_number,international_phone_number&key=${googleCredentials}`
   );
+
   let name = result.data.result.name;
   let phoneStr = result.data.result.international_phone_number;
   let phone = phoneStr.replace(/\s/g, "");
@@ -402,8 +402,9 @@ const fetchYendaxPlaceDetail = async (place, inputFields) => {
   const result = await axios(
     `https://search-maps.yandex.ru/v1/?text=${place}&bbox=13.3457347,47.6964719~13.36,47.91&type=biz&lang=en_us&apikey=${yandexCredentails}`
   );
+  console.log(result.data);
 
-  let name = result.data.features[0].properties.name;
+  let name = result.data.features[2].properties.name;
   let phone = "Record not found";
   let address = "Record not found";
   if (result.data.features[0].properties.CompanyMetaData.Phones) {
@@ -525,8 +526,8 @@ const fetchHotelPlaceDetail = async (place, inputFields) => {
       FILTER regex(?name ,"${place}") .
   }
   `;
-
   const queryDispatcherHotel = new GetDataFromHotel(endpointUrlHotel);
+
   let hotelData = [];
   let name = "Record not found.";
   let phone = "Record not found.";
@@ -623,7 +624,7 @@ const fetchHotelPlaceDetail = async (place, inputFields) => {
   return await hotelData;
 };
 
-// computer confidence name
+// compute confidence name
 const fetchNameConfidence = async (data, place, state) => {
   let confidence = 0.0;
   let confidenceGoogle = 0.0;

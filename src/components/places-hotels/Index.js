@@ -352,6 +352,7 @@ const Index = () => {
       >
         Knowledge Graph Validator
       </h2>
+
       <div className="row">
         <div>
           <button
@@ -382,6 +383,7 @@ const Index = () => {
                         onChange={(event) =>
                           handleChangeInput(inputField.id, event)
                         }
+                        placeholder="KG-ID"
                       />
                     </div>
                   ) : (
@@ -419,6 +421,22 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="col-md-4">
+                {inputFields.length !== 1 && inputField.predicate!=="name" ? (
+                  <div className="form-group form-group-lg">
+                  <input
+                    name="object"
+                    type="text"
+                    className="form-control"
+                    value={inputField.object}
+                    disabled={inputField.disabled}
+                    onChange={(event) =>
+                      handleChangeInput(inputField.id, event)
+                    }
+                    placeholder="Phone/Address"
+                    style={{ height: "40px" }}
+                  />
+                </div>
+                ) : (
                   <div className="form-group form-group-lg">
                     <input
                       name="object"
@@ -429,10 +447,11 @@ const Index = () => {
                       onChange={(event) =>
                         handleChangeInput(inputField.id, event)
                       }
-                      placeholder="Enter a object"
+                      placeholder={inputField.subject}
                       style={{ height: "40px" }}
                     />
                   </div>
+                  )}
                 </div>
                 <div>
                   <button
@@ -465,7 +484,7 @@ const Index = () => {
 
         <div className="col-md">
           <span>
-            <b>Manual Weights</b>
+            <b>Weights</b>
           </span>
           <div
             className="row"
@@ -543,7 +562,7 @@ const Index = () => {
         <div className="col-md-2">Hotel</div>
         <div className="col-md-2">Google</div>
         <div className="col-md-2">Open Street Map</div>
-        <div className="col-md-2">Yendax</div>
+        <div className="col-md-2">Yandex</div>
         <div className="col-md-2">Confidence</div>
       </div>
       {data.map((a, index) => {

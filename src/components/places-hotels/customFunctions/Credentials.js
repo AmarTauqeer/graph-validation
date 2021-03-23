@@ -10,5 +10,6 @@ export const openKey = () => {
 
 export const yandexKey = () => {
   let key = "your yandex key";
+
   return key;
 };
