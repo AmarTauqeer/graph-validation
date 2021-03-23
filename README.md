@@ -8,17 +8,17 @@ Node,React, Bootstrap, REST APIs, Axios,git
 
 ### Installation
 
-## Download from repository
+Download from repository: https://github.com/AmarTauqeer/graph-validation.git
 
-## Open folder in VS Code
+Open folder in VS Code
 
-## Open terminal
+Open terminal
 
-## cd graph-validation
+cd graph-validation
 
-## npm install
+npm install
 
-## npm start
+npm start
 
 
 ### live Demo
