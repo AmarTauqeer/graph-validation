@@ -1,5 +1,5 @@
 export const googleKey = () => {
-  let key = "your google key";
+  let key = "your google keys";
   return key;
 };
 

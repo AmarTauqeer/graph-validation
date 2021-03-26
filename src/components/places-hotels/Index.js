@@ -130,43 +130,63 @@ const Index = () => {
           dataSource: "Hotel",
           name: hotelPlaceData[0].name,
           phone: hotelPlaceData[0].phone,
+          phone_from_db: hotelPlaceData[0].phone_from_db,
           address: hotelPlaceData[0].address,
+          address_from_db: hotelPlaceData[0].address_from_db,
+          latitude:hotelPlaceData[0].latitude,
+          longitude:hotelPlaceData[0].longitude
         },
       ];
 
+      let lat_param=tempPlaceData[0].latitude;
+      let log_param=tempPlaceData[0].longitude;
+      let address_param=tempPlaceData[0].address_from_db;
+      let phone_param=tempPlaceData[0].phone_from_db;
+      
       // google
-      let googlePlaceData = await fetchGooglePlace(place, inputFields);
-      tempPlaceData = [
-        ...tempPlaceData,
-        {
-          dataSource: "Google",
-          name: googlePlaceData[0].name,
-          phone: googlePlaceData[0].phone,
-          address: googlePlaceData[0].address,
-        },
-      ];
+      let googlePlaceData = await fetchGooglePlace(place, inputFields,lat_param,log_param,address_param);
+        tempPlaceData = [
+          ...tempPlaceData,
+          {
+            dataSource: "Google",
+            name: googlePlaceData[0].name,
+            phone: googlePlaceData[0].phone,
+            address: googlePlaceData[0].address,
+            latitude:hotelPlaceData[0].latitude,
+            longitude:hotelPlaceData[0].longitude
+  
+          },
+        ];
       // open
       let openPlaceData = await fetchOpenPlaceDetail(place, inputFields);
-      tempPlaceData = [
-        ...tempPlaceData,
-        {
-          dataSource: "Open",
-          name: openPlaceData[0].name,
-          phone: openPlaceData[0].phone,
-          address: openPlaceData[0].address,
-        },
-      ];
+        tempPlaceData = [
+          ...tempPlaceData,
+          {
+            dataSource: "Open",
+            name: openPlaceData[0].name,
+            phone: openPlaceData[0].phone,
+            address: openPlaceData[0].address,
+            latitude:hotelPlaceData[0].latitude,
+            longitude:hotelPlaceData[0].longitude
+  
+          },
+        ];
+      
       // yendax
-      let yendaxPlaceData = await fetchYendaxPlaceDetail(place, inputFields);
-      tempPlaceData = [
-        ...tempPlaceData,
-        {
-          dataSource: "Yendax",
-          name: yendaxPlaceData[0].name,
-          phone: yendaxPlaceData[0].phone,
-          address: yendaxPlaceData[0].address,
-        },
-      ];
+      let yendaxPlaceData = await fetchYendaxPlaceDetail(place, inputFields,lat_param,log_param,phone_param);
+        tempPlaceData = [
+          ...tempPlaceData,
+          {
+            dataSource: "Yendax",
+            name: yendaxPlaceData[0].name,
+            phone: yendaxPlaceData[0].phone,
+            address: yendaxPlaceData[0].address,
+            latitude:hotelPlaceData[0].latitude,
+            longitude:hotelPlaceData[0].longitude
+  
+          },
+        ];
+      
       // get phone value
       let phoneValue = "";
       if (inputFields.length === 2 && inputFields[1].predicate === "phone") {
@@ -330,6 +350,7 @@ const Index = () => {
           },
         ];
       } else {
+        //console.log(tempPlaceData);
         tempData = [
           ...tempData,
           {

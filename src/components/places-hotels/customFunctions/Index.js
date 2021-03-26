@@ -3,13 +3,15 @@ import data from "../../../data/data";
 import { googleKey, yandexKey } from "./Credentials";
 import GetDataFromHotel from "./GetDataFromHotel";
 // google place
-const fetchGooglePlace = async (place, inputFields) => {
+const fetchGooglePlace = async (place, inputFields,lat_param,log_param,address_param) => {
+  //console.log(lat_param+log_param+address_param+place);
   let googleCredentials = googleKey();
   var googlePlace = [];
   if (place) {
     const result = await axios.get(
-      `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=%${place}%&inputtype=textquery&region=at&fields=name,business_status,formatted_address,place_id,geometry&key=${googleCredentials}`
+      `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=%${place} ${address_param}%&inputtype=textquery&fields=name,business_status,formatted_address,place_id,geometry&locationbias=circle:2000@${lat_param},${log_param}&key=${googleCredentials}`
     );
+    //console.log(result);
     if (result.data.status !== "ZERO_RESULTS") {
       const fetchData = result.data.candidates[0];
       const placeId = fetchData.place_id;
@@ -21,7 +23,7 @@ const fetchGooglePlace = async (place, inputFields) => {
           placeId,
           inputFields,
           address,
-          googleCredentials
+          googleCredentials,
         );
       }
     }
@@ -34,13 +36,13 @@ const fetchGooglePlaceDetail = async (
   placeId,
   inputFields,
   address,
-  googleCredentials
+  googleCredentials,
 ) => {
   let googleData = [];
   const result = await axios(
     `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,formatted_phone_number,international_phone_number&key=${googleCredentials}`
   );
-
+  //console.log(result);
   let name = result.data.result.name;
   let phoneStr = result.data.result.international_phone_number;
   let phone = phoneStr.replace(/\s/g, "");
@@ -397,14 +399,15 @@ const fetchOpenPlaceDetail = async (place, inputFields) => {
 };
 
 // yendax
-const fetchYendaxPlaceDetail = async (place, inputFields) => {
+const fetchYendaxPlaceDetail = async (place, inputFields,lat_param,log_param,phone_param) => {
   let yandexCredentails = yandexKey();
+//console.log(phone_param);
   const result = await axios(
-    `https://search-maps.yandex.ru/v1/?text=${place}&bbox=13.3457347,47.6964719~13.36,47.91&type=biz&lang=en_us&apikey=${yandexCredentails}`
+    `https://search-maps.yandex.ru/v1/?text=${phone_param}&ll=${lat_param},${log_param}&type=biz&lang=en_US&apikey=${yandexCredentails}`
   );
-  console.log(result.data);
+  //console.log(result.data);
 
-  let name = result.data.features[2].properties.name;
+  let name = result.data.features[0].properties.name;
   let phone = "Record not found";
   let address = "Record not found";
   if (result.data.features[0].properties.CompanyMetaData.Phones) {
@@ -506,13 +509,16 @@ const fetchHotelPlaceDetail = async (place, inputFields) => {
     "http://172.16.44.133:7200/repositories/TirolGraph-Alpha";
   const sparqlQueryHotel = `PREFIX rdfs:<http://schema.org/>
   PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-  PREFIX dc:<http://purl.org/dc/terms/>select distinct ?name ?email ?url ?addressCountry ?addressRegion ?addressLocality ?streetAddress ?postalCode ?phone ?loc ?add ?contact
+  PREFIX dc:<http://purl.org/dc/terms/>select distinct ?name ?latitude ?longitude ?email ?url ?addressCountry ?addressRegion ?addressLocality ?streetAddress ?postalCode ?phone ?loc ?add ?contact
   where{
       ?s a rdfs:Hotel .
       ?s rdfs:name ?name .
       ?s rdfs:url ?url .
       ?s rdfs:email ?email .
       ?s rdfs:location ?loc .
+      ?loc rdfs:geo ?geo .
+      ?geo rdfs:longitude ?longitude .
+      ?geo rdfs:latitude ?latitude .
       ?loc rdfs:address ?add .
       ?add rdfs:addressCountry ?addressCountry .
       ?add rdfs:addressRegion ?addressRegion .
@@ -532,16 +538,25 @@ const fetchHotelPlaceDetail = async (place, inputFields) => {
   let name = "Record not found.";
   let phone = "Record not found.";
   let address = "Record not found.";
-  //let url = "Record not found.";
+  let address_from_db = "Record not found.";
+  let latitude="Record not found.";
+  let longitude="Record not found.";
+  let phone_from_db = "Record not found.";
+
 
   await queryDispatcherHotel.query(sparqlQueryHotel).then((res) => {
-    if (res.results.bindings.length === 1) {
+    if (res.results.bindings.length >= 1) {
       name = res.results.bindings[0].name.value;
+      latitude = res.results.bindings[0].latitude.value;
+      longitude = res.results.bindings[0].longitude.value;
       phone = res.results.bindings[0].phone.value;
+      phone_from_db = res.results.bindings[0].phone.value;
       address = res.results.bindings[0].streetAddress.value;
+      address_from_db = res.results.bindings[0].streetAddress.value;
       //url = res.results.bindings[0].url.value;
     }
   });
+  
 
   if (
     inputFields.length === 3 &&
@@ -554,6 +569,10 @@ const fetchHotelPlaceDetail = async (place, inputFields) => {
         name,
         phone,
         address,
+        address_from_db,
+        latitude,
+        longitude,
+        phone_from_db
       },
     ];
   } else if (
@@ -567,6 +586,10 @@ const fetchHotelPlaceDetail = async (place, inputFields) => {
         name,
         phone,
         address,
+        address_from_db,
+        latitude,
+        longitude,
+        phone_from_db
       },
     ];
   } else if (
@@ -579,6 +602,10 @@ const fetchHotelPlaceDetail = async (place, inputFields) => {
         name,
         phone,
         address: "",
+        address_from_db,
+        latitude,
+        longitude,
+        phone_from_db
       },
     ];
   } else if (
@@ -591,6 +618,10 @@ const fetchHotelPlaceDetail = async (place, inputFields) => {
         name,
         phone: "",
         address,
+        address_from_db,
+        latitude,
+        longitude,
+        phone_from_db
       },
     ];
   } else if (inputFields.length === 1 && inputFields[0].predicate === "name") {
@@ -599,6 +630,10 @@ const fetchHotelPlaceDetail = async (place, inputFields) => {
         name,
         phone: "",
         address: "",
+        address_from_db,
+        latitude,
+        longitude,
+        phone_from_db
       },
     ];
   } else if (inputFields.length === 2 && inputFields[1].predicate === "phone") {
@@ -607,6 +642,10 @@ const fetchHotelPlaceDetail = async (place, inputFields) => {
         name,
         phone,
         address: "",
+        address_from_db,
+        latitude,
+        longitude,
+        phone_from_db
       },
     ];
   } else if (
@@ -618,6 +657,10 @@ const fetchHotelPlaceDetail = async (place, inputFields) => {
         name,
         phone: "",
         address,
+        address_from_db,
+        latitude,
+        longitude,
+        phone_from_db
       },
     ];
   }
