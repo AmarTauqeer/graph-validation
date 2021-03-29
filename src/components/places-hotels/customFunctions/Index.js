@@ -545,6 +545,7 @@ const fetchHotelPlaceDetail = async (place, inputFields) => {
 
 
   await queryDispatcherHotel.query(sparqlQueryHotel).then((res) => {
+    //console.log(res.results.bindings);
     if (res.results.bindings.length >= 1) {
       name = res.results.bindings[0].name.value;
       latitude = res.results.bindings[0].latitude.value;

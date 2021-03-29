@@ -27,6 +27,8 @@ const Index = () => {
       disabled: true,
     },
   ]);
+  // hook for instance confidence
+  const [instanceConfidence, setInstanceConfidence] = useState(0.0);
   // hooks for manual confidence selection by user
   const [state, setState] = React.useState({
     googleWeight: 0.4,
@@ -233,10 +235,6 @@ const Index = () => {
         addressValue,
         state
       );
-      // ceil up the confidence
-      nameConfidence = Math.ceil(nameConfidence);
-      // phoneConfidence = Math.ceil(phoneConfidence);
-      // addressConfidence = Math.ceil(addressConfidence);
 
       let tempData = [];
       // place
@@ -250,7 +248,7 @@ const Index = () => {
             nameGoogle: tempPlaceData[1].name,
             nameOpen: tempPlaceData[2].name,
             nameYendax: tempPlaceData[3].name,
-            confidenceName: nameConfidence * 100,
+            confidenceName: nameConfidence, //* 100,
           },
           {
             validationProperty: "Phone",
@@ -258,7 +256,7 @@ const Index = () => {
             phoneGoogle: tempPlaceData[1].phone,
             phoneOpen: tempPlaceData[2].phone,
             phoneYendax: tempPlaceData[3].phone,
-            confidencePhone: phoneConfidence * 100,
+            confidencePhone: phoneConfidence,// * 100,
           },
         ];
       } else if (
@@ -273,7 +271,7 @@ const Index = () => {
             nameGoogle: tempPlaceData[1].name,
             nameOpen: tempPlaceData[2].name,
             nameYendax: tempPlaceData[3].name,
-            confidenceName: nameConfidence * 100,
+            confidenceName: nameConfidence,// * 100,
           },
           {
             validationProperty: "Address",
@@ -282,7 +280,7 @@ const Index = () => {
             addressOpen: tempPlaceData[2].address,
             addressYendax: tempPlaceData[3].address,
 
-            confidenceAddress: addressConfidence * 100,
+            confidenceAddress: addressConfidence,// * 100,
           },
         ];
       } else if (
@@ -297,7 +295,7 @@ const Index = () => {
             nameGoogle: tempPlaceData[1].name,
             nameOpen: tempPlaceData[2].name,
             nameYendax: tempPlaceData[3].name,
-            confidenceName: nameConfidence * 100,
+            confidenceName: nameConfidence,// * 100,
           },
           {
             validationProperty: "Phone",
@@ -305,7 +303,7 @@ const Index = () => {
             phoneGoogle: tempPlaceData[1].phone,
             phoneOpen: tempPlaceData[2].phone,
             phoneYendax: tempPlaceData[3].phone,
-            confidencePhone: phoneConfidence * 100,
+            confidencePhone: phoneConfidence,// * 100,
           },
           {
             validationProperty: "Address",
@@ -314,7 +312,7 @@ const Index = () => {
             addressOpen: tempPlaceData[2].address,
             addressYendax: tempPlaceData[3].address,
 
-            confidenceAddress: addressConfidence * 100,
+            confidenceAddress: addressConfidence,// * 100,
           },
         ];
       } else if (
@@ -329,7 +327,7 @@ const Index = () => {
             nameGoogle: tempPlaceData[1].name,
             nameOpen: tempPlaceData[2].name,
             nameYendax: tempPlaceData[3].name,
-            confidenceName: nameConfidence * 100,
+            confidenceName: nameConfidence,// * 100,
           },
           {
             validationProperty: "Address",
@@ -338,7 +336,7 @@ const Index = () => {
             addressOpen: tempPlaceData[2].address,
             addressYendax: tempPlaceData[3].address,
 
-            confidenceAddress: addressConfidence * 100,
+            confidenceAddress: addressConfidence,// * 100,
           },
           {
             validationProperty: "Phone",
@@ -346,7 +344,7 @@ const Index = () => {
             phoneGoogle: tempPlaceData[1].phone,
             phoneOpen: tempPlaceData[2].phone,
             phoneYendax: tempPlaceData[3].phone,
-            confidencePhone: phoneConfidence * 100,
+            confidencePhone: phoneConfidence,// * 100,
           },
         ];
       } else {
@@ -359,12 +357,34 @@ const Index = () => {
             nameGoogle: tempPlaceData[1].name,
             nameOpen: tempPlaceData[2].name,
             nameYendax: tempPlaceData[3].name,
-            confidenceName: nameConfidence * 100,
+            confidenceName: nameConfidence,// * 100,
           },
         ];
       }
+
+      let instanceScore=0.0;
+      // instance confidence score
+      if (tempData.length==2 && tempData[1].validationProperty==="Phone") {
+        instanceScore=(nameConfidence+phoneConfidence)/2;
+      } 
+      if(tempData.length==2 && tempData[1].validationProperty==="Address") 
+      {
+        instanceScore=(nameConfidence+addressConfidence)/2;
+      } 
+      if(tempData.length===3) 
+      {
+        instanceScore=(nameConfidence+phoneConfidence+addressConfidence)/3;
+      }
+      if(tempData.length===1){
+        instanceScore=nameConfidence;
+      }  
+      //console.log(instanceScore);
+      setInstanceConfidence(instanceScore);
+
       setData(tempData);
     }
+
+    
   };
   return (
     <div className="container">
@@ -436,7 +456,7 @@ const Index = () => {
                       disabled={inputField.disabled}
                     >
                       <option defaultValue="name">Name</option>
-                      <option value="phone">Phone Number</option>
+                      <option value="phone">Phone</option>
                       <option value="address">Address</option>
                     </select>
                   </div>
@@ -530,7 +550,7 @@ const Index = () => {
             </div>
             <div className="col-md-5">
               <label>
-                <b>Open</b>
+                <b>OSM</b>
               </label>
             </div>
 
@@ -580,10 +600,10 @@ const Index = () => {
         }}
       >
         <div className="col-md-2">Property Name</div>
-        <div className="col-md-2">Hotel</div>
-        <div className="col-md-2">Google</div>
-        <div className="col-md-2">Open Street Map</div>
-        <div className="col-md-2">Yandex</div>
+        <div className="col-md-2">KG</div>
+        <div className="col-md-2">Google Places</div>
+        <div className="col-md-2">Open_Street_Map</div>
+        <div className="col-md-2">Yandex Places</div>
         <div className="col-md-2">Confidence</div>
       </div>
       {data.map((a, index) => {
@@ -645,13 +665,26 @@ const Index = () => {
                     : a.confidenceAddress
                     ? a.confidenceAddress
                     : 0}{" "}
-                  %
+                 
                 </p>
               </div>
             </div>
           </Fragment>
         );
       })}
+                  <div className="row" style={{ border: "solid 1px" }}>
+              <div className="col-md-2"></div>
+              <div className="col-md-2"></div>
+              <div className="col-md-2"></div>
+              <div className="col-md-2"></div>
+              <div className="col-md-2"></div>
+              <div className="col-md-2" style={{
+                  textAlign: "center",
+                  fontWeight: "bold",
+                  color: "blue",
+                }}><p>{instanceConfidence===0?"":instanceConfidence.toFixed(1)}</p></div>
+              </div>
+
     </div>
   );
 };
