@@ -1,0 +1,1069 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+<http://onlim.com/entity/04eaf2f119bbb30e285c4ce86c484982> a schema:Hotel;
+  schema:name "Hotel Winklerhof"@en;
+  schema:addressName "Holzgau 122", "Winkl 122";
+  schema:streetAddress "Hozgau", "Bach";
+  schema:latitude 4.726335E1;
+  schema:longitude 1.035246E1 .
+
+<http://onlim.com/entity/4d0d86c18fcce2612fc8e13bcc0714b5> a schema:Hotel;
+  schema:name "Hotel Winklerhof"@en;
+  schema:addressName "Holzgau 122", "Winkl 122";
+  schema:streetAddress "Hozgau", "Bach";
+  schema:latitude 4.726335E1;
+  schema:longitude 1.035246E1 .
+
+<http://onlim.com/entity/aa7b45e7509db0f7393225810f4597fb> a schema:Hotel;
+  schema:name "Hotel Neue Post"@en;
+  schema:addressName "Holzgau 47";
+  schema:streetAddress "Holzgau";
+  schema:latitude 4.725946E1;
+  schema:longitude 1.034388E1 .
+
+<http://onlim.com/entity/dbbace685d4d102fdbaee4a148e28de2> a schema:Hotel;
+  schema:name "Hotel Neue Post"@en;
+  schema:addressName "Holzgau 47";
+  schema:streetAddress "Holzgau";
+  schema:latitude 4.725946E1;
+  schema:longitude 1.034388E1 .
+
+<http://onlim.com/entity/ccfd993ae5c1c5466fe18996f00d47fd> a schema:Hotel;
+  schema:name "Hotel Neue Post"@en;
+  schema:addressName "Gurglerstraße 1";
+  schema:streetAddress "Sölden";
+  schema:latitude 4.693983E1;
+  schema:longitude 1.102776E1 .
+
+<http://onlim.com/entity/799b26da201f42327ac2e36b4e8a846c> a schema:Hotel;
+  schema:name "Alpenhotel Ammerwald"@en;
+  schema:addressName "Ammerwald 1";
+  schema:streetAddress "Reutte";
+  schema:latitude 4.752572E1;
+  schema:longitude 1.084291E1 .
+
+<http://onlim.com/entity/b9ddf0c8a1b98e7cf530816424949ecc> a schema:Hotel;
+  schema:name "Hotel Alpenhof"@en;
+  schema:addressName "Innerrotte 35";
+  schema:streetAddress "St. Jakob i. D.";
+  schema:latitude 4.691699E1;
+  schema:longitude 1.233544E1 .
+
+<http://onlim.com/entity/9d391ec41e364ab9b531489bf267e7fd> a schema:Hotel;
+  schema:name "Hotel Alpenhof"@en;
+  schema:addressName "Brandseitweg 18";
+  schema:streetAddress "Kirchberg";
+  schema:latitude 4.744823E1;
+  schema:longitude 1.233093E1 .
+
+<http://onlim.com/entity/959700cee8ec003114ea1e59fd7c0447> a schema:Hotel;
+  schema:name "Almi's Berghotel"@en;
+  schema:addressName "Außertal 30";
+  schema:streetAddress "Obernberg am Brenner";
+  schema:latitude 4.701635E1;
+  schema:longitude 1.142217E1 .
+
+<http://onlim.com/entity/ee4dc1833fb4be708c77b13a77050842> a schema:Hotel;
+  schema:name "Almi's Berghotel"@en;
+  schema:addressName "Außertal 30";
+  schema:streetAddress "Obernberg am Brenner";
+  schema:latitude 4.701638E1;
+  schema:longitude 1.142215E1 .
+
+<http://onlim.com/entity/c811a81903da289cecb318278a2fd515> a schema:Hotel;
+  schema:name "Berghotel & Gasthof Marlstein"@en;
+  schema:addressName "Ochsengarten null";
+  schema:streetAddress "Haiming";
+  schema:latitude 4.723191E1;
+  schema:longitude 1.096071E1 .
+
+<http://onlim.com/entity/3a135bcc3544969255e07fb3d13f077b> a schema:Hotel;
+  schema:name "Hotel Schloss Lebenberg"@en;
+  schema:addressName "Lebenbergstraße 17";
+  schema:streetAddress "Kitzbühel";
+  schema:latitude 4.745302E1;
+  schema:longitude 1.23812E1 .
+
+<http://onlim.com/entity/417ea1ebe4cbd2733065cee49285b72d> a schema:Hotel;
+  schema:name "Hotel Schloss Lebenberg"@en;
+  schema:addressName "Lebenbergstraße 17";
+  schema:streetAddress "Kitzbühel";
+  schema:latitude 4.745311E1;
+  schema:longitude 1.238127E1 .
+
+<http://onlim.com/entity/baf3d627f013d2c1ee92c39a516e1b40> a schema:Hotel;
+  schema:name "Gutshof zum Schluxen ***"@en;
+  schema:addressName "Unterpinswang 24";
+  schema:streetAddress "Pinswang";
+  schema:latitude 4.754381E1;
+  schema:longitude 1.068326E1 .
+
+<http://onlim.com/entity/7f71f6522a567ff8ce89bc845c86390b> a schema:Hotel;
+  schema:name "Gutshof zum Schluxen ***"@en;
+  schema:addressName "Unterpinswang 24";
+  schema:streetAddress "Pinswang";
+  schema:latitude 4.75446E1;
+  schema:longitude 1.067599E1 .
+
+<http://onlim.com/entity/e8412a05359e1db8a949b255803c44a0> a schema:Hotel;
+  schema:name "Gasthof Hotel Zum Mohren"@en;
+  schema:addressName "Untermarkt 26";
+  schema:streetAddress "Reutte";
+  schema:latitude 4.749146E1;
+  schema:longitude 1.071785E1 .
+
+<http://onlim.com/entity/071bcc70976ef41cf89a52dd9fdf4319> a schema:Hotel;
+  schema:name "Gasthof Hotel Zum Mohren"@en;
+  schema:addressName "Untermarkt 26";
+  schema:streetAddress "Reutte";
+  schema:latitude 4.749162E1;
+  schema:longitude 1.071781E1 .
+
+<http://onlim.com/entity/0d45b7a0cc8fb55c691b1b53e2409fdc> a schema:Hotel;
+  schema:name "Gästehaus Pension Talblick"@en;
+  schema:addressName "Holz 8";
+  schema:streetAddress "Wängle bei Reutte Tirol";
+  schema:latitude 4.748219E1;
+  schema:longitude 1.067734E1 .
+
+<http://onlim.com/entity/b1b1c72b75f3e281efee5797424295f0> a schema:Hotel;
+  schema:name "Gästehaus Pension Talblick"@en;
+  schema:addressName "Holz 8";
+  schema:streetAddress "Wängle bei Reutte Tirol";
+  schema:latitude 4.748215E1;
+  schema:longitude 1.067738E1 .
+
+<http://onlim.com/entity/be2d9b8488f2457eea88e7570837c333> a schema:Hotel;
+  schema:name "Romantik-Krone"@en;
+  schema:addressName "Wänglestr. 6", "Wänglerstraße 6";
+  schema:streetAddress "Lechaschau";
+  schema:latitude 4.74894E1;
+  schema:longitude 1.070569E1 .
+
+<http://onlim.com/entity/f01ad74ba2448e2c8778357ba1252686> a schema:Hotel;
+  schema:name "Romantik-Krone"@en;
+  schema:addressName "Wänglestr. 6";
+  schema:streetAddress "Lechaschau";
+  schema:latitude 4.748946E1;
+  schema:longitude 1.070665E1 .
+
+<http://onlim.com/entity/59eb691e32dddac90f985829ccfeb123> a schema:Hotel;
+  schema:name "Hotel Moserhof ****"@en;
+  schema:addressName "Planseestraße 44";
+  schema:streetAddress "Breitenwang";
+  schema:latitude 4.748744E1;
+  schema:longitude 1.072809E1 .
+
+<http://onlim.com/entity/a2546e6507ed0b90c95b80b025aa545c> a schema:Hotel;
+  schema:name "Hotel Moserhof ****"@en;
+  schema:addressName "Planseestraße 44";
+  schema:streetAddress "Breitenwang";
+  schema:latitude 4.748749E1;
+  schema:longitude 1.072799E1 .
+
+<http://onlim.com/entity/579d3a68c7029b014525f2e2153d0947> a schema:Hotel;
+  schema:name "Pension Waldrast"@en;
+  schema:addressName "Krankenhausstraße 16";
+  schema:streetAddress "Ehenbichl";
+  schema:latitude 4.747671E1;
+  schema:longitude 1.072341E1 .
+
+<http://onlim.com/entity/34a2b2ad2e19962cdd4993f37d754b0a> a schema:Hotel;
+  schema:name "Pension Waldrast"@en;
+  schema:addressName "Krankenhausstraße 16";
+  schema:streetAddress "Ehenbichl";
+  schema:latitude 4.747664E1;
+  schema:longitude 1.072373E1 .
+
+<http://onlim.com/entity/ef072be7ea64e3615c79b00b6134a081> a schema:Hotel;
+  schema:name "Maximilian Koch KG"@en;
+  schema:addressName "Reuttener Straße 1";
+  schema:streetAddress "Ehenbichl";
+  schema:latitude 4.747429E1;
+  schema:longitude 1.070427E1 .
+
+<http://onlim.com/entity/b2df9d87c4a2ec866c0666fe025b94e9> a schema:Hotel;
+  schema:name "Hotel Maximilian"@en;
+  schema:addressName "Reuttener Straße 1";
+  schema:streetAddress "Ehenbichl";
+  schema:latitude 4.747429E1;
+  schema:longitude 1.070427E1 .
+
+<http://onlim.com/entity/a4b8f58a78878341a0beb97ed117ce67> a schema:Hotel;
+  schema:name "Maximilian Koch KG"@en;
+  schema:addressName "Reuttener Straße 1";
+  schema:streetAddress "Ehenbichl";
+  schema:latitude 4.747445E1;
+  schema:longitude 1.070395E1 .
+
+<http://onlim.com/entity/c1f2d5b182098b7cba79e3ca2be0f2e3> a schema:Hotel;
+  schema:name "Europäische Burgenwelten Ehrenberg mit den Doserhaus-Ferienwohnungen a.d. Via"@en;
+  schema:addressName "Klause 1";
+  schema:streetAddress "Klause";
+  schema:latitude 4.746389E1;
+  schema:longitude 1.071316E1 .
+
+<http://onlim.com/entity/9d26b29219ee4dc622bd622d10f60792> a schema:Hotel;
+  schema:name "Europäische Burgenwelten Ehrenberg mit den Doserhaus-Ferienwohnungen a.d. Via"@en;
+  schema:addressName "Klause 1";
+  schema:streetAddress "Klause";
+  schema:latitude 4.746482E1;
+  schema:longitude 1.071978E1 .
+
+<http://onlim.com/entity/ceca29b4a2a72b634780fd1513d2b8a8> a schema:Hotel;
+  schema:name "Hotel Fischer am See"@en;
+  schema:addressName "null null", "Fischer am See 1";
+  schema:streetAddress "Heiterwang";
+  schema:latitude 4.745556E1;
+  schema:longitude 1.07593E1 .
+
+<http://onlim.com/entity/d344d411f2d28b9aef2f516e969ec653> a schema:Hotel;
+  schema:name "Hotel Fischer am See"@en;
+  schema:addressName "null null", "Fischer am See 1";
+  schema:streetAddress "Heiterwang";
+  schema:latitude 4.745556E1;
+  schema:longitude 1.07593E1 .
+
+<http://onlim.com/entity/e8302dbb93640f3b959e3fa1f226c3c1> a schema:Hotel;
+  schema:name "Gasthof Sonne & Pension Tirol"@en;
+  schema:addressName "Gipfl 13", "Gipfl 13+64";
+  schema:streetAddress "Bichlbach";
+  schema:latitude 4.742109E1;
+  schema:longitude 1.078732E1 .
+
+<http://onlim.com/entity/0becc42010f76ff7f359f933d8f1d50c> a schema:Hotel;
+  schema:name "Gasthof Sonne & Pension Tirol"@en;
+  schema:addressName "Gipfl 13+64";
+  schema:streetAddress "Bichlbach";
+  schema:latitude 4.741865E1;
+  schema:longitude 1.07933E1 .
+
+<http://onlim.com/entity/77e03c0dee3cd669212c06c69756ff15> a schema:Hotel;
+  schema:name "Hotel Garni Lärchenhof ****"@en;
+  schema:addressName "Gries 12", "Gries 16";
+  schema:streetAddress "Lermoos";
+  schema:latitude 4.740713E1;
+  schema:longitude 1.086906E1 .
+
+<http://onlim.com/entity/0437a1064614c62c104153c91b10d670> a schema:Hotel;
+  schema:name "Hotel Garni Lärchenhof ****"@en;
+  schema:addressName "Gries 16";
+  schema:streetAddress "Lermoos";
+  schema:latitude 4.740724E1;
+  schema:longitude 1.086911E1 .
+
+<http://onlim.com/entity/6cdd99e2486f03ad413bb73af21e6df7> a schema:Hotel;
+  schema:name "Ferienhaus Olympia"@en;
+  schema:addressName "Innsbrucker Straße 4";
+  schema:streetAddress "Lermoos";
+  schema:latitude 4.740048E1;
+  schema:longitude 1.088473E1 .
+
+<http://onlim.com/entity/6e7517f3ffb6759a82d5674d682095b3> a schema:Hotel;
+  schema:name "Ferienhaus Olympia"@en;
+  schema:addressName "Innsbrucker Straße 4";
+  schema:streetAddress "Lermoos";
+  schema:latitude 4.74007E1;
+  schema:longitude 1.088425E1 .
+
+<http://onlim.com/entity/7f1f01488771ebd460c9415a41b6a087> a schema:Hotel;
+  schema:name "Hotel Hubertushof"@en;
+  schema:addressName "Kirchplatz 7";
+  schema:streetAddress "Lermoos";
+  schema:latitude 4.739847E1;
+  schema:longitude 1.088806E1 .
+
+<http://onlim.com/entity/b3df45b8a41f72f3f2ed28f588f97464> a schema:Hotel;
+  schema:name "Hotel Hubertushof"@en;
+  schema:addressName "Kirchplatz 7";
+  schema:streetAddress "Lermoos";
+  schema:latitude 4.739848E1;
+  schema:longitude 1.088825E1 .
+
+<http://onlim.com/entity/92518a0f13b72acae099c14823e566b7> a schema:Hotel;
+  schema:name "Hotel Post & Postschlössl"@en;
+  schema:addressName "Kirchplatz 6";
+  schema:streetAddress "Lermoos";
+  schema:latitude 4.739824E1;
+  schema:longitude 1.088778E1 .
+
+<http://onlim.com/entity/cb0f24d0b0eb2eb8a07b0b37d100da5b> a schema:Hotel;
+  schema:name "Hotel Post & Postschlössl"@en;
+  schema:addressName "Kirchplatz 6";
+  schema:streetAddress "Lermoos";
+  schema:latitude 4.739845E1;
+  schema:longitude 1.088758E1 .
+
+<http://onlim.com/entity/bd2ad85c11cb6c309283c6d5776c47ca> a schema:Hotel;
+  schema:name "Bartlhof"@en;
+  schema:addressName "Schladgasse 1";
+  schema:streetAddress "Lermoos";
+  schema:latitude 4.739757E1;
+  schema:longitude 1.088863E1 .
+
+<http://onlim.com/entity/e8b3fa6039440e29ca2b2e148a5a22cc> a schema:Hotel;
+  schema:name "Bartlhof"@en;
+  schema:addressName "Schladgasse 1";
+  schema:streetAddress "Lermoos";
+  schema:latitude 4.739765E1;
+  schema:longitude 1.088874E1 .
+
+<http://onlim.com/entity/8e9578fb38ac4608c86876931955a227> a schema:Hotel;
+  schema:name "Gasthof Panorama"@en;
+  schema:addressName "Ebne 52";
+  schema:streetAddress "Ehrwald";
+  schema:latitude 4.740739E1;
+  schema:longitude 1.092844E1 .
+
+<http://onlim.com/entity/31da6dbd5704dbe4656700f88f124643> a schema:Hotel;
+  schema:name "Gasthof Panorama"@en;
+  schema:addressName "Ebne 52";
+  schema:streetAddress "Ehrwald";
+  schema:latitude 4.740724E1;
+  schema:longitude 1.092745E1 .
+
+<http://onlim.com/entity/80458f58030e9a7800962eb094fa1952> a schema:Hotel;
+  schema:name "Hotel Sonnenspitze ****"@en;
+  schema:addressName "Kirchplatz 14";
+  schema:streetAddress "Ehrwald";
+  schema:latitude 4.739814E1;
+  schema:longitude 1.091966E1 .
+
+<http://onlim.com/entity/d7b1bad131a49ffca13300edf2a35d36> a schema:Hotel;
+  schema:name "Hotel Sonnenspitze ****"@en;
+  schema:addressName "Kirchplatz 14";
+  schema:streetAddress "Ehrwald";
+  schema:latitude 4.739832E1;
+  schema:longitude 1.092011E1 .
+
+<http://onlim.com/entity/15b5e2afb98220612da9fe34ed954200> a schema:Hotel;
+  schema:name "Hotel-Restaurant Stern"@en;
+  schema:addressName "Innsbrucker Straße 8";
+  schema:streetAddress "Ehrwald";
+  schema:latitude 4.73986E1;
+  schema:longitude 1.091868E1 .
+
+<http://onlim.com/entity/f39662f4b57d0ad3f239d8fce19d245f> a schema:Hotel;
+  schema:name "Hotel-Restaurant Stern"@en;
+  schema:addressName "Innsbrucker Straße 8";
+  schema:streetAddress "Ehrwald";
+  schema:latitude 4.739876E1;
+  schema:longitude 1.091766E1 .
+
+<http://onlim.com/entity/4fda65e93beec04b4ce84c2cbbb900ca> a schema:Hotel;
+  schema:name "Hotel-Gasthof Löwen"@en;
+  schema:addressName "null 1";
+  schema:streetAddress "Biberwier";
+  schema:latitude 4.738392E1;
+  schema:longitude 1.089258E1 .
+
+<http://onlim.com/entity/b3849a885c4da47da1840129fe00686b> a schema:Hotel;
+  schema:name "Hotel-Gasthof Löwen"@en;
+  schema:addressName "null 1";
+  schema:streetAddress "Biberwier";
+  schema:latitude 4.738369E1;
+  schema:longitude 1.089204E1 .
+
+<http://onlim.com/entity/abab770e21dfdadcd1c9e1e3e49c6f43> a schema:Hotel;
+  schema:name "Hotel Schloss Fernsteinsee"@en;
+  schema:addressName "null null", "null";
+  schema:streetAddress "Nassereith";
+  schema:latitude 4.731876E1;
+  schema:longitude 1.083104E1 .
+
+<http://onlim.com/entity/835641be75be5822bd553323c76afa67> a schema:Hotel;
+  schema:name "Hotel Schloss Fernsteinsee"@en;
+  schema:addressName "null";
+  schema:streetAddress "Nassereith";
+  schema:latitude 4.734598E1;
+  schema:longitude 1.08187E1 .
+
+<http://onlim.com/entity/b69c7c2bc3ce77a439001876251e6f0b> a schema:Hotel;
+  schema:name "Haus Melmer"@en;
+  schema:addressName "Fernpaß-Straße 10";
+  schema:streetAddress "Nassereith";
+  schema:latitude 4.731941E1;
+  schema:longitude 1.083101E1 .
+
+<http://onlim.com/entity/50fe05b868178fecc3ff12a3791d8402> a schema:Hotel;
+  schema:name "Haus Melmer"@en;
+  schema:addressName "Fernpaß-Straße 10";
+  schema:streetAddress "Nassereith";
+  schema:latitude 4.731943E1;
+  schema:longitude 1.083104E1 .
+
+<http://onlim.com/entity/74f25c0fb561a1f2512a88427e71d95b> a schema:Hotel;
+  schema:name "Gästehaus Kranewitter Ignaz"@en;
+  schema:addressName "Sachsengasse 69a";
+  schema:streetAddress "Nassereith";
+  schema:latitude 4.731514E1;
+  schema:longitude 1.084003E1 .
+
+<http://onlim.com/entity/097fdacb9f9282ad1bdcf38190813da7> a schema:Hotel;
+  schema:name "Gästehaus Kranewitter Ignaz"@en;
+  schema:addressName "Sachsengasse 69a";
+  schema:streetAddress "Nassereith";
+  schema:latitude 4.731771E1;
+  schema:longitude 1.083647E1 .
+
+<http://onlim.com/entity/a65a2c24e2ccf91a79e2fcd24c6bfa4c> a schema:Hotel;
+  schema:name "Gasthof Seewald"@en;
+  schema:addressName "null 12";
+  schema:streetAddress "Strad";
+  schema:latitude 4.726698E1;
+  schema:longitude 1.079237E1 .
+
+<http://onlim.com/entity/a1cf8b98a9c8bb395da28dc744dd5bb2> a schema:Hotel;
+  schema:name "Gasthof Seewald"@en;
+  schema:addressName "null 12";
+  schema:streetAddress "Strad";
+  schema:latitude 4.726679E1;
+  schema:longitude 1.079149E1 .
+
+<http://onlim.com/entity/6f9b06b35f61124b28503fec1b6a0420> a schema:Hotel;
+  schema:name "Frühstückspension Haus Selma"@en;
+  schema:addressName "Griesegg 8a";
+  schema:streetAddress "Tarrenz";
+  schema:latitude 4.72613E1;
+  schema:longitude 1.075745E1 .
+
+<http://onlim.com/entity/18a6f0a3f69c2e1e1bc130ee22baaf05> a schema:Hotel;
+  schema:name "Frühstückspension Haus Selma"@en;
+  schema:addressName "Griesegg 8a";
+  schema:streetAddress "Tarrenz";
+  schema:latitude 4.726187E1;
+  schema:longitude 1.075725E1 .
+
+<http://onlim.com/entity/c5e26d2c90b55b978f653ec676448693> a schema:Hotel;
+  schema:name "Hotel Gurgltalerhof"@en;
+  schema:addressName "Rotanger 1", "null null";
+  schema:streetAddress "Tarrenz", "Rotanger";
+  schema:latitude 4.726421E1;
+  schema:longitude 1.07582E1 .
+
+<http://onlim.com/entity/4089fc9d6f68fbdfb374c85d574f3a7b> a schema:Hotel;
+  schema:name "Hotel Gurgltalerhof"@en;
+  schema:addressName "null null";
+  schema:streetAddress "Rotanger";
+  schema:latitude 4.726479E1;
+  schema:longitude 1.07539E1 .
+
+<http://onlim.com/entity/72d0841ed03dff9e151a6884b03fa362> a schema:Hotel;
+  schema:name "Hotel Gasthof Zum Hirschen"@en;
+  schema:addressName "Thomas-Walch-Straße 3";
+  schema:streetAddress "Imst";
+  schema:latitude 4.724601E1;
+  schema:longitude 1.074099E1 .
+
+<http://onlim.com/entity/f4fe6bcfab7c80b822920cfdb6d43cf8> a schema:Hotel;
+  schema:name "Hotel Gasthof Zum Hirschen"@en;
+  schema:addressName "Thomas-Walch-Straße 3";
+  schema:streetAddress "Imst";
+  schema:latitude 4.724705E1;
+  schema:longitude 1.074472E1 .
+
+<http://onlim.com/entity/4aa10df933a93fc34a950c166f3ef55c> a schema:Hotel;
+  schema:name "Hotel Gasthof Neuner"@en;
+  schema:addressName "Brennbichl 101";
+  schema:streetAddress "Karrösten";
+  schema:latitude 4.722616E1;
+  schema:longitude 1.0748E1 .
+
+<http://onlim.com/entity/5e6cb9c13c50f8e852011f955f5163a5> a schema:Hotel;
+  schema:name "Romedihof Backpacker Hostel"@en;
+  schema:addressName "Brennbichl 91";
+  schema:streetAddress "Karrösten";
+  schema:latitude 4.722152E1;
+  schema:longitude 1.075178E1 .
+
+<http://onlim.com/entity/64fa60b4114d2d6e260dd3b4ff04bf82> a schema:Hotel;
+  schema:name "Romedihof Backpacker Hostel"@en;
+  schema:addressName "Brennbichl 91";
+  schema:streetAddress "Karrösten";
+  schema:latitude 4.722152E1;
+  schema:longitude 1.075178E1 .
+
+<http://onlim.com/entity/22a0b96c0d9fd8e6ba7706e98c31f1c9> a schema:Hotel;
+  schema:name "Romedihof Backpacker Hostel"@en;
+  schema:addressName "Brennbichl 91";
+  schema:streetAddress "Karrösten";
+  schema:latitude 4.722411E1;
+  schema:longitude 1.075049E1 .
+
+<http://onlim.com/entity/4ba9b47b4883b54728f74dcd45df957c> a schema:Hotel;
+  schema:name "Gastronomie GmbH & Trofana Erlebnisdorf"@en;
+  schema:addressName "An der Au 1";
+  schema:streetAddress "Mils bei Imst";
+  schema:latitude 4.721339E1;
+  schema:longitude 1.069718E1 .
+
+<http://onlim.com/entity/d35aecc4c2d4a6300a53730207bc00d7> a schema:Hotel;
+  schema:name "Gastronomie GmbH & Trofana Erlebnisdorf"@en;
+  schema:addressName "An der Au 1";
+  schema:streetAddress "Mils bei Imst";
+  schema:latitude 4.721316E1;
+  schema:longitude 1.069734E1 .
+
+<http://onlim.com/entity/4ffe0291a39c1c6082df1ab0e25ffd1d> a schema:Hotel;
+  schema:name "Haus Erika"@en;
+  schema:addressName "Unterdorf 6a";
+  schema:streetAddress "Mils bei Imst";
+  schema:latitude 4.720709E1;
+  schema:longitude 1.067641E1 .
+
+<http://onlim.com/entity/647e69e9c65680f8dfea13bd70adb1ff> a schema:Hotel;
+  schema:name "Haus Erika"@en;
+  schema:addressName "Unterdorf 6a";
+  schema:streetAddress "Mils bei Imst";
+  schema:latitude 4.720661E1;
+  schema:longitude 1.067451E1 .
+
+<http://onlim.com/entity/5912bef29c078acae42c2444fe6b9f67> a schema:Hotel;
+  schema:name "Pension Silberspitze"@en;
+  schema:addressName "Öde 60";
+  schema:streetAddress "Schönwies";
+  schema:latitude 4.720157E1;
+  schema:longitude 1.066646E1 .
+
+<http://onlim.com/entity/734e590760cbdeb41fea08ba00562456> a schema:Hotel;
+  schema:name "Pension Silberspitze"@en;
+  schema:addressName "Öde 60";
+  schema:streetAddress "Schönwies";
+  schema:latitude 4.720157E1;
+  schema:longitude 1.066646E1 .
+
+<http://onlim.com/entity/2b6cc4fe66307a05488087483ab7422e> a schema:Hotel;
+  schema:name "Pension Silberspitze"@en;
+  schema:addressName "Öde 60";
+  schema:streetAddress "Schönwies";
+  schema:latitude 4.720155E1;
+  schema:longitude 1.066644E1 .
+
+<http://onlim.com/entity/72596647877b679ab2b8e6c259fa19a0> a schema:Hotel;
+  schema:name "Gasthof Kreuz"@en;
+  schema:addressName "Rifenal 15";
+  schema:streetAddress "Zams";
+  schema:latitude 4.716505E1;
+  schema:longitude 1.060296E1 .
+
+<http://onlim.com/entity/b124f3cc4fa130193c89ee591b536029> a schema:Hotel;
+  schema:name "Gasthof Kreuz"@en;
+  schema:addressName "Rifenal 15";
+  schema:streetAddress "Zams";
+  schema:latitude 4.716505E1;
+  schema:longitude 1.060302E1 .
+
+<http://onlim.com/entity/a5d63a873fa288d2ed8d243c9ef81eb5> a schema:Hotel;
+  schema:name "Hotel Jägerhof"@en;
+  schema:addressName "Hauptstraße 50,52";
+  schema:streetAddress "Zams";
+  schema:latitude 4.715436E1;
+  schema:longitude 1.058598E1 .
+
+<http://onlim.com/entity/7713c307bca78fd443f9c7d0c9428973> a schema:Hotel;
+  schema:name "Hotel Jägerhof"@en;
+  schema:addressName "Hauptstraße 50,52";
+  schema:streetAddress "Zams";
+  schema:latitude 4.715456E1;
+  schema:longitude 1.058557E1 .
+
+<http://onlim.com/entity/5731f9b1c58179c273e81ccc9bd4e792> a schema:Hotel;
+  schema:name "Hotel Jägerhof"@en;
+  schema:addressName "Hauptstraße 50,52";
+  schema:streetAddress "Zams";
+  schema:latitude 4.715417E1;
+  schema:longitude 1.058524E1 .
+
+<http://onlim.com/entity/0d8c7e1eb2b14d4ee15ddb8e6473296d> a schema:Hotel;
+  schema:name "Hotel Jägerhof"@en;
+  schema:addressName "Oetzermühlerweg 6";
+  schema:streetAddress "Oetz";
+  schema:latitude 4.720572E1;
+  schema:longitude 1.088989E1 .
+
+<http://onlim.com/entity/1e540945bb11961d4b9f1eb519f8f115> a schema:Hotel;
+  schema:name "Pension Haueis"@en;
+  schema:addressName "Tramsweg 4";
+  schema:streetAddress "Zams";
+  schema:latitude 4.715696E1;
+  schema:longitude 1.059003E1 .
+
+<http://onlim.com/entity/95bc4aefbc1d3619b38ba70a29b4b1bf> a schema:Hotel;
+  schema:name "Pension Haueis"@en;
+  schema:addressName "Tramsweg 4";
+  schema:streetAddress "Zams";
+  schema:latitude 4.715762E1;
+  schema:longitude 1.059022E1 .
+
+<http://onlim.com/entity/cf2c8169e3587847a506a9baaf07272e> a schema:Hotel;
+  schema:name "Landhaus Tschuggmall"@en;
+  schema:addressName "Bruckfeldw. 18", "Hauptplatz null";
+  schema:streetAddress "Zams";
+  schema:latitude 4.715759E1;
+  schema:longitude 1.058945E1 .
+
+<http://onlim.com/entity/be9394707b389359e019fadbe7e8febe> a schema:Hotel;
+  schema:name "Landhaus Tschuggmall"@en;
+  schema:addressName "Bruckfeldw. 18";
+  schema:streetAddress "Zams";
+  schema:latitude 4.71634E1;
+  schema:longitude 1.05843E1 .
+
+<http://onlim.com/entity/e65dce99531c4ac8424d85d9cc91371c> a schema:Hotel;
+  schema:name "Hotel-Restaurant Thurner ***"@en;
+  schema:addressName "Magdalenaweg 6";
+  schema:streetAddress "Zams";
+  schema:latitude 4.716093E1;
+  schema:longitude 1.05853E1 .
+
+<http://onlim.com/entity/2e3ca0b7740f1b3c1bfa8eeb8c8fc115> a schema:Hotel;
+  schema:name "Hotel-Restaurant Thurner ***"@en;
+  schema:addressName "Magdalenaweg 6";
+  schema:streetAddress "Zams";
+  schema:latitude 4.716101E1;
+  schema:longitude 1.058447E1 .
+
+<http://onlim.com/entity/675a0375b010a1bee25a6e3ebdd36edf> a schema:Hotel;
+  schema:name "Hotel Nußbaumhof"@en;
+  schema:addressName "Schrofensteinstraße 1";
+  schema:streetAddress "Landeck";
+  schema:latitude 4.714739E1;
+  schema:longitude 1.05713E1 .
+
+<http://onlim.com/entity/ee56c0c38f96b0e987cab2473fab589a> a schema:Hotel;
+  schema:name "Hotel Nußbaumhof"@en;
+  schema:addressName "Schrofensteinstraße 1";
+  schema:streetAddress "Landeck";
+  schema:latitude 4.71477E1;
+  schema:longitude 1.057117E1 .
+
+<http://onlim.com/entity/9f3d3e2e2f4ad9554f8b9227026d645b> a schema:Hotel;
+  schema:name "Pension Thialblick"@en;
+  schema:addressName "Burschlweg 7";
+  schema:streetAddress "Landeck";
+  schema:latitude 4.713931E1;
+  schema:longitude 1.05622E1 .
+
+<http://onlim.com/entity/81b1771f7ff32d7f1f71070b87bc4ed0> a schema:Hotel;
+  schema:name "Pension Thialblick"@en;
+  schema:addressName "Burschlweg 7";
+  schema:streetAddress "Landeck";
+  schema:latitude 4.714116E1;
+  schema:longitude 1.056155E1 .
+
+<http://onlim.com/entity/04eb895d72054acbf82836feefa04d2c> a schema:Hotel;
+  schema:name "Hotel Schrofenstein"@en;
+  schema:addressName "Malserstraße 31";
+  schema:streetAddress "Landeck";
+  schema:latitude 4.713869E1;
+  schema:longitude 1.056628E1 .
+
+<http://onlim.com/entity/d56afcfb794d36c68f32b4e7adf386ab> a schema:Hotel;
+  schema:name "Hotel Schrofenstein"@en;
+  schema:addressName "Malserstraße 31";
+  schema:streetAddress "Landeck";
+  schema:latitude 4.713883E1;
+  schema:longitude 1.05661E1 .
+
+<http://onlim.com/entity/b0756a59c155b05084064d0a66a73f98> a schema:Hotel;
+  schema:name "Hotel Post ****"@en;
+  schema:addressName "Dorfstraße null";
+  schema:streetAddress "Prutz";
+  schema:latitude 4.707494E1;
+  schema:longitude 1.066464E1 .
+
+<http://onlim.com/entity/25c4839e7de32d9b8c7a2c6b2bd26ded> a schema:Hotel;
+  schema:name "Hotel Post ****"@en;
+  schema:addressName "Dorfstraße null";
+  schema:streetAddress "Prutz";
+  schema:latitude 4.707734E1;
+  schema:longitude 1.066247E1 .
+
+<http://onlim.com/entity/d85352ae3c3b4edb07aa5daf53013812> a schema:Hotel;
+  schema:name "Gasthof Rose"@en;
+  schema:addressName "Dorfstraße 16";
+  schema:streetAddress "Prutz";
+  schema:latitude 4.707614E1;
+  schema:longitude 1.066354E1 .
+
+<http://onlim.com/entity/ed34ce523ccc2039e524f3ddeac3c1ec> a schema:Hotel;
+  schema:name "Gasthof Rose"@en;
+  schema:addressName "Dorfstraße 16";
+  schema:streetAddress "Prutz";
+  schema:latitude 4.707621E1;
+  schema:longitude 1.066376E1 .
+
+<http://onlim.com/entity/44c938172656c41b106ff064649192c0> a schema:Hotel;
+  schema:name "Apart Central"@en;
+  schema:addressName "Zu Haus Nr. 36 null", "Nr. 37, Gartenland", "Nr. 9";
+  schema:streetAddress "Gemeinde Nußdorf ob der Traisen", "Ried";
+  schema:latitude 4.705762E1;
+  schema:longitude 1.065856E1 .
+
+<http://onlim.com/entity/a61912ec96e6cef7a056be9b63bdd6b2> a schema:Hotel;
+  schema:name "Apart Central"@en;
+  schema:addressName "Nr. 9";
+  schema:streetAddress "Ried";
+  schema:latitude 4.705559E1;
+  schema:longitude 1.065223E1 .
+
+<http://onlim.com/entity/4478532d3666800c5482d50e04b3995d> a schema:Hotel;
+  schema:name "Aktiv-Hotel Truyenhof"@en;
+  schema:addressName "Trujen 113", "Truyen 168";
+  schema:streetAddress "Landeck", "Ried im Oberinntal";
+  schema:latitude 4.704871E1;
+  schema:longitude 1.064576E1 .
+
+<http://onlim.com/entity/97c6d0d9625dbb1a6e8f9498efcd6ef7> a schema:Hotel;
+  schema:name "Aktiv-Hotel Truyenhof"@en;
+  schema:addressName "Truyen 168";
+  schema:streetAddress "Ried im Oberinntal";
+  schema:latitude 4.705458E1;
+  schema:longitude 1.065206E1 .
+
+<http://onlim.com/entity/88a34ec0cd81658aa8877c870ee5afdd> a schema:Hotel;
+  schema:name "Gasthof Inntalerhof"@en;
+  schema:addressName "Obertösens null";
+  schema:streetAddress "Tösens";
+  schema:latitude 4.701206E1;
+  schema:longitude 1.060657E1 .
+
+<http://onlim.com/entity/abad34f3f6c556a62e2be2db8d96c58c> a schema:Hotel;
+  schema:name "Gasthof Inntalerhof"@en;
+  schema:addressName "Obertösens null";
+  schema:streetAddress "Tösens";
+  schema:latitude 4.701669E1;
+  schema:longitude 1.060803E1 .
+
+<http://onlim.com/entity/49b0f3ce55d771b826be9b2ccc0a60f9> a schema:Hotel;
+  schema:name "Gasthof Tschuppbach"@en;
+  schema:addressName "Alte Reschenbundesstraße 60", "Tschuppbach 1";
+  schema:streetAddress "Tösens";
+  schema:latitude 4.701802E1;
+  schema:longitude 1.060852E1 .
+
+<http://onlim.com/entity/bb6d8ad4aa3ac2a99d02a788e2d2b55a> a schema:Hotel;
+  schema:name "Gasthof Tschuppbach"@en;
+  schema:addressName "Tschuppbach 1";
+  schema:streetAddress "Tösens";
+  schema:latitude 4.701069E1;
+  schema:longitude 1.059769E1 .
+
+<http://onlim.com/entity/5328a0a10d932a767afe7bf1359f2153> a schema:Hotel;
+  schema:name "Pension St. Lukas ***"@en;
+  schema:addressName "Nr. 296", "St. Lukas 47", "Nr. 391";
+  schema:streetAddress "Pfunds";
+  schema:latitude 4.696957E1;
+  schema:longitude 1.054359E1 .
+
+<http://onlim.com/entity/4048a5c63fa9c0930ec1cb48e17705eb> a schema:Hotel;
+  schema:name "Hotel Tyrol"@en;
+  schema:addressName "Nr. 296", "St. Lukas 47", "Nr. 391";
+  schema:streetAddress "Pfunds";
+  schema:latitude 4.696957E1;
+  schema:longitude 1.054359E1 .
+
+<http://onlim.com/entity/31ddec467056c0aed69bd5fb48aa04e2> a schema:Hotel;
+  schema:name "Hotel Kajetansbrücke"@en;
+  schema:addressName "Nr. 296", "St. Lukas 47", "Nr. 391";
+  schema:streetAddress "Pfunds";
+  schema:latitude 4.696957E1;
+  schema:longitude 1.054359E1 .
+
+<http://onlim.com/entity/15c7ba670d010bc402fe5ad56020a6c8> a schema:Hotel;
+  schema:name "Hotel Tyrol"@en;
+  schema:addressName "Nr. 296";
+  schema:streetAddress "Pfunds";
+  schema:latitude 4.696921E1;
+  schema:longitude 1.053632E1 .
+
+<http://onlim.com/entity/3e6d7b32e6d0f3b3e0f90a0773ae0cb5> a schema:Hotel;
+  schema:name "Pension St. Lukas ***"@en;
+  schema:addressName "St. Lukas 47";
+  schema:streetAddress "Pfunds";
+  schema:latitude 4.696924E1;
+  schema:longitude 1.053761E1 .
+
+<http://onlim.com/entity/79720f7170b5125f0560c1c8308b31f4> a schema:Hotel;
+  schema:name "Hotel Kajetansbrücke"@en;
+  schema:addressName "Nr. 391";
+  schema:streetAddress "Pfunds";
+  schema:latitude 4.695501E1;
+  schema:longitude 1.05134E1 .
+
+<http://onlim.com/entity/0255c840fba5f27a56d2391171765947> a schema:Hotel;
+  schema:name "Hotel Kreuz"@en;
+  schema:addressName "Stuben 43";
+  schema:streetAddress "Pfunds";
+  schema:latitude 4.696988E1;
+  schema:longitude 1.053702E1 .
+
+<http://onlim.com/entity/913115915e2048ee314dbc2e0c75e7b2> a schema:Hotel;
+  schema:name "Hotel Kreuz"@en;
+  schema:addressName "Stuben 43";
+  schema:streetAddress "Pfunds";
+  schema:latitude 4.696971E1;
+  schema:longitude 1.05367E1 .
+
+<http://onlim.com/entity/e29214def2e081d371d1f56bbae02d02> a schema:Hotel;
+  schema:name "Hotel Tyrol"@en;
+  schema:addressName "Wies 10";
+  schema:streetAddress "Söll";
+  schema:latitude 4.750331E1;
+  schema:longitude 1.218837E1 .
+
+<http://onlim.com/entity/dd1d99f42ed010f17da7adb002b9ca86> a schema:Hotel;
+  schema:name "Hotel Tyrol"@en;
+  schema:addressName "Dorfstraße 92";
+  schema:streetAddress "Sölden";
+  schema:latitude 4.696724E1;
+  schema:longitude 1.100727E1 .
+
+<http://onlim.com/entity/eb8156053838127ed1516afa68799002> a schema:Hotel;
+  schema:name "Hotel-Gasthof Traube"@en;
+  schema:addressName "Reschenbundesstrasse 287", "Stubenerstraße 10", "Reschenbundesstrasse 373";
+  schema:streetAddress "Nauders", "Pfunds";
+  schema:latitude 4.696845E1;
+  schema:longitude 1.053351E1 .
+
+<http://onlim.com/entity/d14a3c249551f1c93e37b25cd484e152> a schema:Hotel;
+  schema:name "Hotel-Gasthof Traube"@en;
+  schema:addressName "Stubenerstraße 10";
+  schema:streetAddress "Pfunds";
+  schema:latitude 4.696753E1;
+  schema:longitude 1.053319E1 .
+
+<http://onlim.com/entity/f91da400d1bfb0941ac0c440093204ea> a schema:Hotel;
+  schema:name "Haus Kraft"@en;
+  schema:addressName "null null";
+  schema:streetAddress "Hinter Rauth";
+  schema:latitude 4.695706E1;
+  schema:longitude 1.051439E1 .
+
+<http://onlim.com/entity/2f32d448c46a8722bd2461062f5fdd0b> a schema:Hotel;
+  schema:name "Haus Kraft"@en;
+  schema:addressName "null null";
+  schema:streetAddress "Hinter Rauth";
+  schema:latitude 4.695612E1;
+  schema:longitude 1.05134E1 .
+
+<http://onlim.com/entity/685638de211c447cbe03efd5dcbd02bd> a schema:Hotel;
+  schema:name "Amontanara"@en;
+  schema:addressName "Spitzwiesenweg null";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689412E1;
+  schema:longitude 1.050096E1 .
+
+<http://onlim.com/entity/6fe07962f4511b4b6a1cf5aa98cbeabd> a schema:Hotel;
+  schema:name "Amontanara"@en;
+  schema:addressName "Spitzwiesenweg null";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689446E1;
+  schema:longitude 1.050008E1 .
+
+<http://onlim.com/entity/ef17cc8f2a431e6b10d1ef0ff273ee07> a schema:Hotel;
+  schema:name "Ferienhaus Auer"@en;
+  schema:addressName "Dr.-Tschiggfrey-Straße null";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.688912E1;
+  schema:longitude 1.050227E1 .
+
+<http://onlim.com/entity/75f812fc628d3ca14512938a05cb87cb> a schema:Hotel;
+  schema:name "Ferienhaus Auer"@en;
+  schema:addressName "Dr.-Tschiggfrey-Straße null";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689349E1;
+  schema:longitude 1.049952E1 .
+
+<http://onlim.com/entity/5dabb9dcf8e1305b37007ba63a48682f> a schema:Hotel;
+  schema:name "Haus Sonneck"@en;
+  schema:addressName "Hinderdorf 267";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689449E1;
+  schema:longitude 1.05025E1 .
+
+<http://onlim.com/entity/1469711b6a2fad9c500965cb95cbc06b> a schema:Hotel;
+  schema:name "Haus Sonneck"@en;
+  schema:addressName "Hinderdorf 267";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689434E1;
+  schema:longitude 1.050349E1 .
+
+<http://onlim.com/entity/51a2558fa1331d43b01ed82dd775c734> a schema:Hotel;
+  schema:name "Haus Arina"@en;
+  schema:addressName "Nr. 392";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689279E1;
+  schema:longitude 1.049951E1 .
+
+<http://onlim.com/entity/bd26dc442f7c3c87755b6e9de2a6732f> a schema:Hotel;
+  schema:name "Haus Arina"@en;
+  schema:addressName "Nr. 392";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689273E1;
+  schema:longitude 1.049963E1 .
+
+<http://onlim.com/entity/6a75ef6d70ed5c3832fd5a3e6d6d20da> a schema:Hotel;
+  schema:name "Alpen-Comfort-Hotel Central"@en;
+  schema:addressName "Nr. 196";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689059E1;
+  schema:longitude 1.050112E1 .
+
+<http://onlim.com/entity/be4e428ee862f55aca2c1dad1345f183> a schema:Hotel;
+  schema:name "Hotel Central"@en;
+  schema:addressName "Nr. 196";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689062E1;
+  schema:longitude 1.05011E1 .
+
+<http://onlim.com/entity/ca1123db5f8560baf7283d4366f35a02> a schema:Hotel;
+  schema:name "Alpen-Comfort-Hotel Central"@en;
+  schema:addressName "Nr. 196";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689069E1;
+  schema:longitude 1.050118E1 .
+
+<http://onlim.com/entity/12151780c5d824b2e510ef4ab9b6521f> a schema:Hotel;
+  schema:name "Alois' Ferienglück"@en;
+  schema:addressName "Sandbichl null";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.688983E1;
+  schema:longitude 1.049907E1 .
+
+<http://onlim.com/entity/2351d7ddd3ea73a16dd8ea756a689626> a schema:Hotel;
+  schema:name "Alois' Ferienglück"@en;
+  schema:addressName "Sandbichl null";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.688897E1;
+  schema:longitude 1.049967E1 .
+
+<http://onlim.com/entity/62f8d79dc4951de22bc87f41fa5f5292> a schema:Hotel;
+  schema:name "Hotel Mein Almhof"@en;
+  schema:addressName "Nr. 314";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.688887E1;
+  schema:longitude 1.05018E1 .
+
+<http://onlim.com/entity/98a6d4c40776044f14e4b601782b729a> a schema:Hotel;
+  schema:name "Hotel Mein Almhof"@en;
+  schema:addressName "Nr. 314";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.688877E1;
+  schema:longitude 1.050207E1 .
+
+<http://onlim.com/entity/a6274c9034bd0d8ba2e6ea1ffa543942> a schema:Hotel;
+  schema:name "Gasthof zum Goldenen Löwen ***"@en;
+  schema:addressName "Postplatz null";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689166E1;
+  schema:longitude 1.050148E1 .
+
+<http://onlim.com/entity/b3c8945793cd7792e663c73b4cf50a9b> a schema:Hotel;
+  schema:name "Gasthof zum Goldenen Löwen ***"@en;
+  schema:addressName "Postplatz null";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689157E1;
+  schema:longitude 1.050173E1 .
+
+<http://onlim.com/entity/aee468916affcbe70891e4e9f82811e4> a schema:Hotel;
+  schema:name "Apart-Bauernhof Rosenhof"@en;
+  schema:addressName "Kleinhansgasse null";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689351E1;
+  schema:longitude 1.050211E1 .
+
+<http://onlim.com/entity/49822d6e0338d6bc326ff65e5d48a6ba> a schema:Hotel;
+  schema:name "Haus Jung"@en;
+  schema:addressName "Kleinhansgasse null";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689283E1;
+  schema:longitude 1.050213E1 .
+
+<http://onlim.com/entity/ba31b8965fc63c0a882e8b3c941323b1> a schema:Hotel;
+  schema:name "Apart-Bauernhof Rosenhof"@en;
+  schema:addressName "Kleinhansgasse null";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689222E1;
+  schema:longitude 1.050229E1 .
+
+<http://onlim.com/entity/58c5385e546685e65703a9b76d2c0bc8> a schema:Hotel;
+  schema:name "Haus Jung"@en;
+  schema:addressName "Kleinhansgasse null";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689227E1;
+  schema:longitude 1.050205E1 .
+
+<http://onlim.com/entity/700e874a4a434dcd820101059d6f4f48> a schema:Hotel;
+  schema:name "Apartpension Anni Winkler"@en;
+  schema:addressName "Nr. 61";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689244E1;
+  schema:longitude 1.050285E1 .
+
+<http://onlim.com/entity/8c6bd6eb919ae01b1caf1785045cad24> a schema:Hotel;
+  schema:name "Apartpension Anni Winkler"@en;
+  schema:addressName "Nr. 61";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689242E1;
+  schema:longitude 1.050306E1 .
+
+<http://onlim.com/entity/5e623e4ed7e7133309578f785437e807> a schema:Hotel;
+  schema:name "Hotel Post"@en;
+  schema:addressName "Steeg 17";
+  schema:streetAddress "Steeg";
+  schema:latitude 4.724279E1;
+  schema:longitude 1.029372E1 .
+
+<http://onlim.com/entity/c1536b033e5a66fdfa47dd75f3aa7e92> a schema:Hotel;
+  schema:name "Hotel Post"@en;
+  schema:addressName "Dorf 11", "Dorf 17";
+  schema:streetAddress "Stuben am Arlberg";
+  schema:latitude 4.712638E1;
+  schema:longitude 1.02081E1 .
+
+<http://onlim.com/entity/61511c350a4b6a221457daf9c5b5e893> a schema:Hotel;
+  schema:name "Hotel Post"@en;
+  schema:addressName "Dorfstraße 1";
+  schema:streetAddress "Prutz";
+  schema:latitude 4.707733E1;
+  schema:longitude 1.066242E1 .
+
+<http://onlim.com/entity/d960eebe7c06b224855d713bc3b70db6> a schema:Hotel;
+  schema:name "Hotel Post"@en;
+  schema:addressName "null";
+  schema:streetAddress "Vent";
+  schema:latitude 4.686183E1;
+  schema:longitude 1.091574E1 .
+
+<http://onlim.com/entity/4cd8c9a78ed556b57add7e2c283ce9e8> a schema:Hotel;
+  schema:name "Hotel Post"@en;
+  schema:addressName "Nr. 37";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689169E1;
+  schema:longitude 1.050103E1 .
+
+<http://onlim.com/entity/a744a50fa303fa5efea2ae37c3db8191> a schema:Hotel;
+  schema:name "Hotel Post"@en;
+  schema:addressName "Nr. 37";
+  schema:streetAddress "Nauders";
+  schema:latitude 4.689163E1;
+  schema:longitude 1.050121E1 .
+
+<http://onlim.com/entity/33e0bfd0e1ee7b031370eaca3afd8380> a schema:Hotel;
+  schema:name "Hotel Post"@en;
+  schema:addressName "Venter Straße null";
+  schema:streetAddress "Sölden";
+  schema:latitude 4.686115E1;
+  schema:longitude 1.091468E1 .
+
+<http://onlim.com/entity/78441827d2479a2c1f9e5a4a38c0b047> a schema:Hotel;
+  schema:name "Hotel Post"@en .
