@@ -1,4 +1,4 @@
-# TKG Innsbruck Hotel
+# TKG Hotel
 TKG-hotel is a dataset used for the evaluation of the Validator of Knowledge Graphs. All facts on it are instances of `Hotel` that have been extracted from [The Tirol Knowledge Graph](http://graphdb.sti2.at/repositories/TirolGraph-Alpha) (TKG).
 
 ## Information
