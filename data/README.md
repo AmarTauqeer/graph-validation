@@ -7,6 +7,7 @@ TKG-hotel is a dataset used for the evaluation of the Validator of Knowledge Gra
 ----------|---------
 Hotel | 855 instances
 Properties | addressName, name, telephone.
+Triples | 3420 triples.
 Format | .ttl
 
 ## Find Out More
